@@ -1,4 +1,4 @@
 class GenreSerializer 
     include FastJsonapi::ObjectSerializer 
-    attributes :id, :type, :img_url 
+    attributes :id, :type
 end 
