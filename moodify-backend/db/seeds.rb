@@ -11,7 +11,7 @@ Genre.destroy_all
 Mood.destroy_all 
 Playlist.destroy_all 
 # User data 
-barryallen = User.create(username: "Barry Allen", age: 25, img_url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dailycardinal.com%2Farticle%2F2018%2F10%2Feverything-you-need-to-know-about-season-five-of-the-flash&psig=AOvVaw2FdaYh9o9xhBCM93N4YKsk&ust=1590609128875000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDPqIan0ukCFQAAAAAdAAAAABAD") 
+barryallen = User.create(username: "Barry Allen") 
 # Genre data 
 desi = Genre.create(genre_type: "Desi") #1
 hiphop = Genre.create(genre_type: "Hip-Hop") #2
