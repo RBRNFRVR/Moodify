@@ -17,14 +17,12 @@ ActiveRecord::Schema.define(version: 2020_05_26_191422) do
 
   create_table "genres", force: :cascade do |t|
     t.string "type"
-    t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "moods", force: :cascade do |t|
     t.string "type"
-    t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -39,6 +37,8 @@ ActiveRecord::Schema.define(version: 2020_05_26_191422) do
 
   create_table "songs", force: :cascade do |t|
     t.string "name"
+    t.string "artist"
+    t.string "language"
     t.integer "genre_id"
     t.integer "mood_id"
     t.string "song_url"
