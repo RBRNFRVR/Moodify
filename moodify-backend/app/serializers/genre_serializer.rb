@@ -1,4 +1,4 @@
 class GenreSerializer 
     include FastJsonapi::ObjectSerializer 
-    attributes :id, :type
+    attributes :id, :genre_type
 end 

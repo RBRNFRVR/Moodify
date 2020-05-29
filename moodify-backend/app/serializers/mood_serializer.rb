@@ -1,4 +1,4 @@
-class MoodSerializer < ActiveModel::Serializer 
+class MoodSerializer  
     include FastJsonapi::ObjectSerializer 
-    attributes :id, :type
+    attributes :id, :mood_type
 end 
