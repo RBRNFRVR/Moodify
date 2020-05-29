@@ -1,26 +1,72 @@
 body {      
     background-color: #9d00eb;
-    background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png") 
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png") ;
+    margin: 0
 }
-
 h1,h2,h3,h4,h5,h6 {
     color: #111;
 }
 
-img{
-    position: absolute;
-  clip: rect(0px,1425px,2000000px,0px);
+nav {
+    display: flex;
+    margin: 15px;
+    align-items: center;
 }
-button{
+.Username{
+    margin: 15px;
+}
+.photo-box-caption{
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+     /* Full width */
+    padding: 10px;
+}
+
+#new-user-btn{
     background-color:whitesmoke; 
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px; 
+  font-size: 20px; 
 }
+
+.cards-container{
+    
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    background:white;
+    width: 90%;
+    height: 200px;
+    margin: 20px 0px;
+    display:flex;
+} 
+.card-left{
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.photo{
+    width:100%;
+    cursor: pointer;
+}
+.card-right{
+    background-color: white;
+    height: 100%;
+    width:60%;
+}
+
 
 .l-box {
     padding: 2em;
